@@ -11,17 +11,17 @@ I followed [this](https://www.linode.com/docs/applications/project-management/ju
 
 # Jekyll Setup
 
-## Installing requirements
-
 To install Jekyll I needed a working version of make and a recent version of Ruby.
 
 On a mac, it is best to install ruby within [Ruby Version Manager](https://rvm.io/).
 
-### Install RVM
+## Install Ruby with RVM
+
+Get RVM and rails:
 
 ```>> curl -sSL https://get.rvm.io | bash -s stable --rails```
 
-### Install Ruby
+Install Ruby:
 
 ```bash
 >> rvm install ruby
@@ -42,66 +42,7 @@ Using ~/.rvm/gems/ruby-2.6.3
 ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
 ```
 
-### Errors
-
-#### Don't run inside a conda environment
-
-```bash
-Error running '__rvm_make -j12',
-please read ~/.rvm/log/1583487087_ruby-2.6.3/make.log
-
-There has been an error while running make. Halting the installation.
-```
-
-In this file was the error:
-
-```bash
-/anaconda3/envs/jupyter_bic_comp/bin/x86_64-apple-darwin13.4.0-ar: illegal option -- n
-```
-
-It seems that it was using the compiler from my conda environment.
-
-#### GPG
-
-Retrying the command to install RVM I then got this warning about missing GPG software to validate the download. It seemed to install anyway.
-
-```bash
-Downloading https://github.com/rvm/rvm/archive/1.29.9.tar.gz
-Downloading https://github.com/rvm/rvm/releases/download/1.29.9/1.29.9.tar.gz.asc
-Found PGP signature at: 'https://github.com/rvm/rvm/releases/download/1.29.9/1.29.9.tar.gz.asc',
-but no GPG software exists to validate it, skipping.
-...
-Upgrade of RVM in ~/.rvm/ is complete.
-```
-
-#### `which rvm` failing
-
-Initially `which rvm` would return nothing. RVM adds a command to your .bashrc file to add itself to the path. Either do source ~/.bashrc or just start a new shell to have easy access to rvm.
-
-#### "RVM is not a function"
-
-```bash
->> rvm use 2.6
-
-RVM is not a function, selecting rubies with 'rvm use ...' will not work.
-
-You need to change your terminal emulator preferences to allow login shell.
-Sometimes it is required to use `/bin/bash --login` as the command.
-Please visit https://rvm.io/integration/gnome-terminal/ for an example.
-```
-
-As the error message suggests I need to use the following command:
-
-```bash
->> /bin/bash --login
-Restored session: Thu  5 Mar 2020 08:24:39 GMT
->> rvm use 2.6
-Using ~/.rvm/gems/ruby-2.6.3
-```
-
-https://stackoverflow.com/questions/23963018/rvm-is-not-a-function-selecting-rubies-with-rvm-use-will-not-work
-
-### Install Jekyll
+## Install Jekyll
 
 `>> gem install jekyll bundler`
 
@@ -169,13 +110,90 @@ As described in the 'Errors' section below, it is important for GitHub pages to 
 
 `mv index.markdown index.md`
 
-### Commit and push
+## Testing
+
+`bundle exec jekyll serve --livereload --open-url`
+
+This command will launch a locally hosted version of the website and update it whenever changes are made (except changes to `_config.yml`).
+
+## Testing online
+
+Push code to github:
 
 `git add . && git commit && git push`
 
-### Errors
+The site should now be viewable at `https://<user>.github.io/` e.g. `https://nichollskc.github.io/`
 
-#### Could not find gem github-pages
+## Change theme
+
+I switched to the theme [here](https://github.com/mmistakes/mm-github-pages-starter). Probably it would have been easier just to start with a clone of this repo.
+
+# Errors
+
+Here is a record of the various errors I encountered and how I fixed them.
+
+## Errors in Jekyll installation
+
+### Don't run inside a conda environment
+
+```bash
+Error running '__rvm_make -j12',
+please read ~/.rvm/log/1583487087_ruby-2.6.3/make.log
+
+There has been an error while running make. Halting the installation.
+```
+
+In this file was the error:
+
+```bash
+/anaconda3/envs/jupyter_bic_comp/bin/x86_64-apple-darwin13.4.0-ar: illegal option -- n
+```
+
+It seems that it was using the compiler from my conda environment.
+
+### GPG
+
+Retrying the command to install RVM I then got this warning about missing GPG software to validate the download. It seemed to install anyway.
+
+```bash
+Downloading https://github.com/rvm/rvm/archive/1.29.9.tar.gz
+Downloading https://github.com/rvm/rvm/releases/download/1.29.9/1.29.9.tar.gz.asc
+Found PGP signature at: 'https://github.com/rvm/rvm/releases/download/1.29.9/1.29.9.tar.gz.asc',
+but no GPG software exists to validate it, skipping.
+...
+Upgrade of RVM in ~/.rvm/ is complete.
+```
+
+### `which rvm` failing
+
+Initially `which rvm` would return nothing. RVM adds a command to your .bashrc file to add itself to the path. Either do source ~/.bashrc or just start a new shell to have easy access to rvm.
+
+### "RVM is not a function"
+
+```bash
+>> rvm use 2.6
+
+RVM is not a function, selecting rubies with 'rvm use ...' will not work.
+
+You need to change your terminal emulator preferences to allow login shell.
+Sometimes it is required to use `/bin/bash --login` as the command.
+Please visit https://rvm.io/integration/gnome-terminal/ for an example.
+```
+
+As the error message suggests I need to use the following command:
+
+```bash
+>> /bin/bash --login
+Restored session: Thu  5 Mar 2020 08:24:39 GMT
+>> rvm use 2.6
+Using ~/.rvm/gems/ruby-2.6.3
+```
+
+https://stackoverflow.com/questions/23963018/rvm-is-not-a-function-selecting-rubies-with-rvm-use-will-not-work
+
+## Errors in building blog
+
+### Could not find gem github-pages
 
 ```bash
 >> bundle exec jekyll serve --host=0.0.0.0 docs/
@@ -185,19 +203,7 @@ Run `bundle install` to install missing gems.
 
 I fixed this with `bundle update jekyll`
 
-## Testing locally
-
-`bundle exec jekyll serve`
-
-## Testing online
-
-The site should now be viewable at `https://<user>.github.io/` e.g. `https://nichollskc.github.io/`
-
-#### GitHub pages only displaying README.md
+### GitHub pages only displaying README.md
 
 By default GitHub will host the whole repository, or if it finds an index.html file or index.md file it will prioritise that. Since the index file was named index.markdown it wasn't hosting the site properly, and instead just displaying the README file instead.
-
-## Change theme
-
-I switched to the theme here: `https://github.com/mmistakes/mm-github-pages-starter`
 
