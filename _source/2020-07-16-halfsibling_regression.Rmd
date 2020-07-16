@@ -27,9 +27,7 @@ The idea is to regress $Y$ on its half-siblings $X_1, X_2, \dots X_k$. Since the
 
 When we regress $y$ on its half-sibling $x$, we recover $\hat{y}$ which is in the same direction as $x$. The residuals $y-\hat{y}$ are then almost in the same direction as the signal i.e. we have recovered the part of $y$ that is due to signal.
 
-```{r projection_plot, echo=FALSE}
-#knitr::include_graphics("/Users/kath/docs/nichollskc.github.io/assets/images/halfsibling_regression_projection.jpg")
-```
+![Projection](/assets/images/halfsibling_regression_projection.jpg)
 
 ### Example application - searching for exoplanets
 
