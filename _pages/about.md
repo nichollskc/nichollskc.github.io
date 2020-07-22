@@ -9,7 +9,7 @@ During my MRes year I studied a number of courses in Machine Learning, Statistic
 
 ## Before Cambridge
 
-I studied Mathematics (MMath) at the University of Oxford from 2012-2016, focusing on pure mathematics in the early years but with a greater focus on statistics in later years. I think the greatest skill I gained from this degree was the ability to look at a dense page of information, none of which I understand, and slowly work out its meaning piece by piece.
+I studied Mathematics (MMath) at the University of Oxford from 2012-2016, focusing on pure mathematics in the early years but with a greater focus on statistics in later years. I think the greatest skill I gained from this degree was the ability to look at a dense page of information, none of which I understand, and slowly work out its meaning piece by piece. I have found this a useful skill when studying in many different fields, and in programming.
 
-I've always had an interest in coding, having spent many hours during my childhood on programming projects with my brother (such as a virtual reconstruction of an enigma machine) when I should probably have been outside. In 2015 I did a summer internship at a software engineering company and started a job at the same company after my graduation in 2016. I learned how to code in C and python and improved key coding skills such as design and test generation.
+I've always had an interest in coding, having spent many hours during my childhood on programming projects with my brother, such as a virtual reconstruction of an enigma machine. In 2015 I did a summer internship at a software engineering company and started a job at the same company after my graduation in 2016. I learned how to code in C and python and improved key coding skills such as design and test generation.
 
