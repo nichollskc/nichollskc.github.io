@@ -16,8 +16,6 @@ knitr::opts_knit$set(base.dir = "/Users/kath/docs/nichollskc.github.io/", base.u
 knitr::opts_chunk$set(fig.path = "assets/images/")
 ```
 
-# Stopping rules and multiple testing
-
 I came across this problem in Alex Reinhart's book ['Statistics Done Wrong'](https://www.statisticsdonewrong.com/regression.html) and thought it would be an interesting little R project to code up some simulations.
 
 When testing a new treatment, researchers often want to keep an eye on how the experiment is going, and to be able to change their plans for the experiment based on preliminary results. It might be unethical to continue giving a treatment if it has a strong negative effect, or equally to withold a treatment which already seems highly effective.
