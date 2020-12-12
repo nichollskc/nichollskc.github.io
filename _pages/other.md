@@ -31,5 +31,5 @@ My fiance writes narrative poetry and we are working on a video format to help t
 
 ## Visualisation for Gloomhaven
 
-Gloomhaven is a 'choose-your-own-adventure' type board game, where players play through scenarios and make decisions about the course they take through the game. To be able to quickly visualise the route taken through the game so far, and pick out good scenarios to complete next, I wrote a quick tool using python's graphviz package to make a pdf using dot that shows the links between the scenarios.
+Gloomhaven is a 'choose your own adventure' type board game, where players play through scenarios and make decisions about the course they take through the game. To be able to quickly visualise the route taken through the game so far, and pick out good scenarios to complete next, I wrote a quick tool using python's graphviz package to make a pdf using dot that shows the links between the scenarios.
 
