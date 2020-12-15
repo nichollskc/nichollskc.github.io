@@ -1,0 +1,16 @@
+<h2>{{ pub.ref-authors }} ({{ pub.ref-year }}).</h2>
+<p>
+  {{ pub.ref-title }}. 
+  <em>{{ pub.ref-journal}}</em>{% if pub.ref-vol %}, {{ pub.ref-vol }}{% endif %}.
+  {% if pub.ref-doi %}
+    <a href="http://dx.doi.org/{{ pub.ref-doi }}">
+      doi: {{ pub.ref-doi }}
+    </a>
+  {% endif %}
+    <br>
+    <div class="publinks">
+        <i class="far fa-file-pdf"></i>&nbsp; <a href="/assets/files/{{ pub.slug}}.pdf">PDF</a>&nbsp;&nbsp;
+        <i class="fab fa-fw fa-github"></i>&nbsp; <a href="{{ pub.ref-code }}">Code</a>&nbsp;&nbsp;
+        <i class="fas fa-link"></i>&nbsp; <a href="{{ pub.url }}">Project Page</a>
+    </div>
+</p>

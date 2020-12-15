@@ -1,6 +1,7 @@
 ---
 title:  "Comparison of sparse biclustering algorithms for gene expression datasets"
 date:   2020-12-15 13:46:25 +0000
+layout: publication
 categories:
   - research
   - biclustering
@@ -15,7 +16,8 @@ ref-code: "https://github.com/nichollskc/biclust_comp"
 ref-journal: "Submitted"
 ref-slug: "biclust_comp"
 ---
-Comparison study of eight sparse biclustering methods on gene expression data.
+
+Comparison study of eight sparse biclustering algorithms on gene expression datasets. I am interested in biclustering as a way to find groups of genes that have high connectivity in the gene regulatory network of the human immune system.
 
 ## Abstract
 
@@ -25,8 +27,12 @@ In this study we compared four classes of sparse biclustering algorithms on a ra
 
 ## Further links
 
-Code to run the analysis is available at https://github.com/nichollskc/biclust_comp, including wrappers for each algorithm, implementations of evaluation metrics, and code to simulate datasets and perform pre- and post-processing.
+Code to run the analysis is available on [GitHub](https://github.com/nichollskc/biclust_comp), including wrappers for each algorithm, implementations of evaluation metrics, and code to simulate datasets and perform pre- and post-processing.
 
-The full tables of results are available at https://doi.org/10.5281/zenodo.4317556
+The full tables of results are available on [Zenodo](https://doi.org/10.5281/zenodo.4317556).
 
-The preprint is available to download [here](assets/files/biclust_comp.pdf) along with [Supplementary information](assets/files/biclust_comp_supplementary.pdf).
+The preprint is available to download [here](/assets/files/biclust_comp.pdf) along with [Supplementary information](/]assets/files/biclust_comp_supplementary.pdf).
+
+Talk given at MGM Michaelmas workshop: <i class="far fa-file-pdf"></i> [Slides](/assets/files/biclust_comp_MGM.pdf)
+
+Talk focusing on the plan for the project, and the motivation for biclustering: <i class="far fa-file-pdf"></i> [Slides](/assets/files/biclust_comp_plan.pdf)
