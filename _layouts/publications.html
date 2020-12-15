@@ -1,0 +1,36 @@
+---
+layout: single
+---
+
+{{ content }}
+
+<link rel="stylesheet" href="/assets/css/publications.css">
+
+<h3>Publications</h3>
+
+<div class="publist">
+    <ul>
+      {% for post in site.posts %}
+        {% if post.post_type == 'Paper' %}
+          <li>
+              <h2>{{ post.ref-authors }} ({{ post.ref-year }}).</h2>
+            <p>
+              {{ post.ref-title }}. 
+              <em>{{ post.ref-journal}}</em>{% if post.ref-vol %}, {{ post.ref-vol }}{% endif %}.
+              {% if post.ref-doi %}
+                <a href="http://dx.doi.org/{{ post.ref-doi }}">
+                  doi: {{ post.ref-doi }}
+                </a>
+              {% endif %}
+                <br>
+                <div class="publinks">
+                    <i class="far fa-file-pdf"></i>&nbsp; <a href="/assets/files/{{ post.slug}}.pdf">PDF</a>&nbsp;&nbsp;
+                    <i class="fab fa-fw fa-github"></i>&nbsp; <a href="{{ post.ref-code }}">Code</a>&nbsp;&nbsp;
+                    <i class="fas fa-link"></i>&nbsp; <a href="{{ post.url }}">Project Page</a>
+                </div>
+            </p>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+</div>
