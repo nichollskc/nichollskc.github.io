@@ -15,6 +15,7 @@ ref-pdf: "assets/files/biclust_comp_main.pdf"
 ref-code: "https://github.com/nichollskc/biclust_comp"
 ref-journal: "Submitted"
 ref-slug: "biclust_comp"
+ref-doi: "10.1101/2020.12.15.422852"
 ---
 
 Comparison study of eight sparse biclustering algorithms on gene expression datasets. I am interested in biclustering as a way to find groups of genes that have high connectivity in the gene regulatory network of the human immune system.
@@ -31,7 +32,7 @@ Code to run the analysis is available on [GitHub](https://github.com/nichollskc/
 
 The full tables of results are available on [Zenodo](https://doi.org/10.5281/zenodo.4317556).
 
-The preprint is available to download [here](/assets/files/biclust_comp.pdf) along with [Supplementary information](/]assets/files/biclust_comp_supplementary.pdf).
+The preprint is available to download [here](/assets/files/biclust_comp.pdf) along with [Supplementary information](/]assets/files/biclust_comp_supplementary.pdf) and is also available on [bioRxiv](https://doi.org/10.1101/2020.12.15.422852).
 
 Talk given at MGM Michaelmas workshop: <i class="far fa-file-pdf"></i> [Slides](/assets/files/biclust_comp_MGM.pdf)
 
