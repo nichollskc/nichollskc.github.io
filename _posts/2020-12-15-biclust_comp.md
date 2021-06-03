@@ -1,6 +1,6 @@
 ---
 title:  "Comparison of sparse biclustering algorithms for gene expression datasets"
-date:   2020-12-15 13:46:25 +0000
+date:   2021-05-06 13:46:25 +0000
 layout: publication
 categories:
   - research
@@ -10,7 +10,7 @@ categories:
 post_type: Paper
 ref-title: "Comparison of sparse biclustering algorithms for gene expression dataset"
 ref-authors: "Kath Nicholls and Chris Wallace"
-ref-year: 2020
+ref-year: 2021
 ref-pdf: "assets/files/biclust_comp_main.pdf"
 ref-code: "https://github.com/nichollskc/biclust_comp"
 ref-journal: "Submitted"

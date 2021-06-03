@@ -17,6 +17,10 @@ I was going to try and write a compiler for heraldry, since heraldry essentially
 
 Compilers and grammar have some interesting applications in computational biology, such as representations for molecules. A valid molecule can be produced by a series of steps, starting from the empty molecule and using rules such as 'a hydrogen can be replaced by a carbon attached to 3 hydrogens'. This is called the [Molecular Hypergraph Grammar, Kajino 2019](http://proceedings.mlr.press/v97/kajino19a/kajino19a.pdf)
 
+## Crossword compiler with Rust
+
+To learn Rust I put together a tool that takes a list of crossword clues and finds the best arrangement of the answers into a crossword grid. [Here](https://github.com/nichollskc/crossword_compiler) is the github repo. I thought it would be cool to use a genetic algorithm to search through the space of possible grids but I no longer think this is the best approach. I've written a [short post](/programming/rust/crossword-compiler) about my attempt to make this work. At some point I'm planning to get the web interface up and running.
+
 ## NFL prediction
 
 To combine my love of statistics and the NFL ([Skol!](https://www.vikings.com/)) I want to build up a repetoire of predictors capable of aiding selection of an NFL fantasy team. I'm hoping to include:
@@ -32,4 +36,3 @@ My fiance writes narrative poetry and we are working on a video format to help t
 ## Visualisation for Gloomhaven
 
 Gloomhaven is a 'choose your own adventure' type board game, where players play through scenarios and make decisions about the course they take through the game. To be able to quickly visualise the route taken through the game so far, and pick out good scenarios to complete next, I wrote a quick tool using python's graphviz package to make a pdf using dot that shows the links between the scenarios.
-
