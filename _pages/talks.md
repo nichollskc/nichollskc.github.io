@@ -3,6 +3,7 @@ permalink: /talks/
 title: "Talks"
 ---
 
+* Presented [poster](/assets/files/biclust_comp_ProbGenApr2021.pdf) at Probabilistic Genomics in April 2021.
 * Summary of [biclustering comparison paper](/research/biclustering/biclust_comp), given at the MGM Michaelmas Seminar, 24th November 2020. <i class="far fa-file-pdf"></i> [Slides](/assets/files/biclust_comp_MGM.pdf)
 * Short presentation on [snakemake](https://snakemake.readthedocs.io/en/stable/index.html), 23rd June 2020. <i class="far fa-file-pdf"></i> [Slides](/assets/files/short_snakemake.pdf)
 * Journal club presentation of [PLIER](https://github.com/wgmao/PLIER) given to the Wallace group, 31st March 2020. <i class="far fa-file-pdf"></i> [Slides](/assets/files/PLIER_journal_club.pdf)
