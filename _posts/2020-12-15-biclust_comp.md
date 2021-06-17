@@ -13,7 +13,7 @@ ref-authors: "Kath Nicholls and Chris Wallace"
 ref-year: 2021
 ref-pdf: "assets/files/biclust_comp_main.pdf"
 ref-code: "https://github.com/nichollskc/biclust_comp"
-ref-journal: "Submitted"
+ref-journal: "Briefings in Bioinformatics"
 ref-slug: "biclust_comp"
 ref-doi: "10.1093/bib/bbab140"
 ---
